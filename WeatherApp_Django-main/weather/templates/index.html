@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather info</title>
+</head>
+<body>
+    <form action="/" method="POST">
+        {% csrf_token %}
+    <input type="text" name = "search" placeholder="SEARCH"> 
+    <input type="submit" >
+    </form>
+    {% if search != "" %}
+    <h2>AREA: {{city}}</h2>
+    <h3>
+        <table><tr><td>
+        COUNTRY CODE: {{countrycode}}<br>
+        TEMPRATURE: {{temprature}}<br>
+        HUMIDITY: {{humidity}}
+        </td></tr></table>
+    </h3>
+    {% endif %}
+</body>
+</html>
