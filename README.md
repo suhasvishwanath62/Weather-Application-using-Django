@@ -8,4 +8,4 @@ Current Weather:
 - Humidity: The amount of moisture in the air, expressed as a percentage. 
 - Country Code: It provides a Country Code in which country we are searching. 
 - Area: It display in which area we are searching. 
-- `Technologies Used – Python · HTML5/CSS3 · Django · MySQL`
+- `Technologies Used – Python · HTML5 · Django`
